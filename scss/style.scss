@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+$accent:#D7B399;
+$dark:#212121;
+$light: #F9F6F1;
+$gray: #CBCFD4;
+$light-gray: #F4F4F4;
+$light-dark: #8D8D8D;
+$important: #D84033;
+
+.body{
+    font-family: 'Monserrat', sans-serif;
+}
+.page{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    &-light{
+        background-color: $light;
+    }
+    &-dark{
+        background-color: $dark;
+    }
+}
+.wrapper{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 26px;
+}
+
+.nav{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+
+    &-item{
+        margin-right: 52px;
+    }
+
+    &-link{
+        color: $dark;
+        text-decoration: none;
+    }
+}
+
+.cart{
+    background: url("../img/cart.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 30x;
+    height: 30px;
+    padding-left: 45px;
+    background-position: 0 center;
+
+    &-count{
+        color: #fff;
+        padding:10px 24px;
+        display: block;
+    }
+}
+.title-h2{
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.btn{
+    background-color: $accent;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 28px;
+
+    &-center{
+        display: block;
+        text-align: center;
+        max-width: 168px;
+        margin: 0 auto;
+        span{
+            margin-right: 15px;
+        }
+    }
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+
+    &-item{
+        width: 555px;
+    }
+    .box{
+        width: 555px;
+    }
+    .sale{
+        width: 555px;
+        &-description{
+            font-size: 30px;
+        }
+
+        &-title{
+            font-size: 55px;
+            font-weight: 700;
+        }
+    }
+}
+
+.box{
+    position: relative;
+
+    &-price{
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top:35px;
+
+        &-old{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &-new{
+            font-size: 42px;
+            font-weight: 700;
+            color: $important;
+        }
+    }
+}
+.notice{
+    text-align: center;
+    color: #fff;
+    padding: 64px 0 54px;
+    &-title{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 400;
+        span{
+            font-weight: 700;
+        }
+    }
+    &-description{
+        font-size: 21px;
+    }
+}
+
+.collection{
+    display: flex;
+    justify-content: space-between;
+
+    &-item{
+        flex: 0 0 50%;
+        padding: 60px 0;
+        background-repeat: no-repeat;
+        background-size: 190px 171px;
+        background-position: right bottom;
+        
+    }
+    &-man{
+        background-image: url("../img/man.png");
+    }
+    &-woman{
+        background-image: url("../img/woman.png");
+    }
+    &-title{
+        font-size: 24px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    &-description{
+        font-size: 16px;
+        margin-bottom: 43px;
+    }
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    &-item{
+        border: 2px double $accent;
+    }
+    &-title{
+        font-weight: 600;
+    }
+    &-price{
+        color: $accent;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    &-logo{
+        flex: 0 0 40%;
+    }
+    &-nav{
+        flex: 0 0 60%;
+        display: flex;
+        justify-content: space-between;
+        color:#fff;
+    }
+    &-list{
+        list-style-type: none;
+        padding-left: 0;
+        &-title{
+            font-size: 10px;
+            font-weight: 700;
+        }
+        &-item{
+            margin-bottom: 10px;
+        }
+        &-link{
+            display: block;
+            width: 30x;
+            height: 30px;
+            padding-left: 45px;
+            background-position: 0 center;
+            color: $gray;
+            text-decoration: none;
+        }  
+        .vk{
+            background: url("../img/vk.svg");
+            background-repeat: no-repeat;
+        }
+        .facebook{
+            background: url("../img/facebook.svg");
+            background-repeat: no-repeat;
+        }
+        .instagram{
+            background: url("../img/insta.svg");
+            background-repeat: no-repeat;
+        }
+    }
+
+}
